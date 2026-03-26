@@ -63,6 +63,25 @@ git init
 ```
 
 ## ✧˖°. ┆∿ The Core Cycle
+
+### Adding `.gitignore`
+It is a key concept that prevents unnecessary or sensitive files from being tracked by Git. This is useful for files that *don’t need to be shared*, like:
+- Compiled binaries (`.exe`, `.dll`)
+- Temporary files (`.tmp`, `.log`)
+- IDE or system-specific files (`.vscode/`, `Thumbs.db`)
+Example:
+```
+# Ignore all .exe files
+*.exe
+# Ignore VS Code folder
+.vscode/
+```
+**How to add .gitignore**
+1. Create a new text file
+2. Name it as .gitignore
+   
+💡 **TIP:** Always create a `.gitignore` before committing your project to avoid cluttering the repository with unnecessary files.
+
 ### Add Files
 ```bash
 git add .
